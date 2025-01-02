@@ -1,0 +1,51 @@
+/* Header.css */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f3f3f3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-list li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-list li a:hover {
+    color: #0056b3;
+  }
+  
+  /* To ensure content is visible below the header */
+  body {
+    padding-top: 4rem; /* Adjust based on header height */
+  }
+  
